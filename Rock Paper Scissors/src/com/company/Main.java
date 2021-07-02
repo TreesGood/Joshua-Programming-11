@@ -50,37 +50,39 @@ public class Main {
         //determines who wins and the choices that were selected
 
         String Choices = "\nComputer Choice: "+ ComputerChoice+ "\tPlayer Choice: "+ PlayerChoice;
-
+        String L = "You Lose!";
+        String W = "You Win!";
         if(PlayerChoice.equals(ComputerChoice)){
             System.out.println("Draw!"+Choices);
 
         }else if(PlayerChoice.equals("paper")){
 
             if(ComputerChoice.equals("rock")){
-                System.out.println("You Win!"+ Choices);
+                System.out.println(W+ Choices);
 
             }else if(ComputerChoice.equals("scissors")){
-                System.out.println("You Lose!"+Choices);
+                System.out.println(L+Choices);
             }
         }else if(PlayerChoice.equals("rock")){
 
             if(ComputerChoice.equals("scissors")){
-                System.out.println("You Win!"+ Choices);
+                System.out.println(W+ Choices);
 
             }else if(ComputerChoice.equals("paper")){
-                System.out.println("You Lose!"+Choices);
+                System.out.println(L+Choices);
 
             }
         }else if(PlayerChoice.equals("scissors")){
 
             if(ComputerChoice.equals("paper")){
-                System.out.println("You Win!"+ Choices);
+                System.out.println(W+ Choices);
 
             }else if(ComputerChoice.equals("rock")){
-                System.out.println("You Lose!"+Choices);
+                System.out.println(L+Choices);
 
             }
 
         }
     }
 }
+[]
