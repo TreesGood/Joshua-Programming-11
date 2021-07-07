@@ -11,7 +11,7 @@ public class Main {
         return output;
     }
 
-
+//what should I do if there is an array of length 0?
     static int[] pop(int[] array){
         int[] output = new int[(array.length)-1];
         for(int i =0; i < output.length;i++) {
@@ -34,7 +34,6 @@ public class Main {
 
         return output;
     }
-
 
     public static void main(String[] args) {
 
