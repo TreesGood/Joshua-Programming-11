@@ -1,5 +1,3 @@
-package com.company;
-
 public class Main {
 
     //Code your solution to problem number one here
@@ -23,9 +21,9 @@ public class Main {
     static int problemTwo(String s){
         int answer = 0;
 
-        for(int i = s.length(); i>3; i--){
+        for(int i = 0;i+2<s.length(); i++){
 
-            String substr = s.substring(i-3,i);
+            String substr = s.substring(i,i+3);
 
             if(substr.equals("bob")){
 
@@ -38,7 +36,7 @@ public class Main {
     //Code your solution to problem number 3 here
     static String problemThree(String s){
         //string to numbers in an array
-        String longeststring = "";
+        String longeststring = s.substring(0,1);
         String testingstring = s.substring(0,1);
 
         for(int i = 0; i+1 <= s.length(); i++) {
