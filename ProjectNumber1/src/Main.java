@@ -62,7 +62,7 @@ public class Main {
 
     }
     public static void main(String[] args) {
-        String s = "qabcdfabcdbob";
+        String s = "bobqabcdfabcdbob";
         //problem 1
         int answer = problemOne(s);
         System.out.println("Number of vowels: "+answer);
