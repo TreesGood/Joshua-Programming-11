@@ -16,6 +16,7 @@ public class Item {
     public double getValue() {
         return value;
     }
+    //special getter for the rarity as a string of stars
     public String getRarityString() {
 
         String StarRarity = "☆☆☆☆☆";

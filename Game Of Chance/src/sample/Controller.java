@@ -20,6 +20,7 @@ public class Controller {
     public Button InventorySellButton;
     public double money = 1700;
     public Label Money1;
+    //lifetime statistics
     public Label LifetimeRolls;
     public Label oneStarRolls;
     public Label twoStarRolls;
@@ -37,6 +38,7 @@ public class Controller {
     public int fiveStars;
     public int Sold;
     public int zeroStars;;
+    //list of name to choose from randomly
     //17
     String[] itemTypes = {"Sword","Bow","Wand","Laser rifle","Broadsword", "Staff", "Spear","Club","Shurikens","Stick","Ruler","Chainsaw","Spell Book","Daggers","Broken Bottle","Stapler","Sharp(and I mean VERY sharp) pencil"};
     //19
@@ -44,6 +46,7 @@ public class Controller {
     //19
     String[] itemTitleVerb = {"slaying","taming","summoning","healing","resurrecting","cleaning","hugging","obliterating","head patting","yelling at","catching","walking","","happiness","despair","hair cutting","watching","educating","vaccinating","lecturing about the meaning of life, the universe and everything"};
 
+    //selling items
     public void SellItem(ActionEvent actionEvent) {
         Item item;
         item = Inventory.getSelectionModel().getSelectedItem();
@@ -59,7 +62,7 @@ public class Controller {
 
     }
 
-
+    //rolling or items
     public void Roll(ActionEvent actionEvent) {
         if (money >= 170) {
             money -=170;
@@ -104,6 +107,7 @@ public class Controller {
                 StarRarity = "★★★★★";
                 fiveStars++;
             }
+            //update counters for items
             rolls++;
             zeroStarRolls.setText(String.valueOf(zeroStars));
             oneStarRolls.setText(String.valueOf(oneStars));
@@ -122,6 +126,7 @@ public class Controller {
         }
     }
 
+    //displaying info for in inventory
     public void DisplayInfo(MouseEvent mouseEvent) {
         InventorySellButton.setDisable(false);
         Item item;
