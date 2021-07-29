@@ -123,6 +123,7 @@ public class Controller {
     }
 
     public void DisplayInfo(MouseEvent mouseEvent) {
+        InventorySellButton.setDisable(false);
         Item item;
         item = Inventory.getSelectionModel().getSelectedItem();
         InventoryItemName.setText(item.name);
