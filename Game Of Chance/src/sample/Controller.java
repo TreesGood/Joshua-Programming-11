@@ -55,7 +55,7 @@ public class Controller {
         InventoryItemRarity.setText("");
         InventoryItemValue.setText("");
         Sold++;
-        LifeTimeSold.setText(String.valueOf(Sold));
+        InventorySellButton.setDisable(true);
 
     }
 
