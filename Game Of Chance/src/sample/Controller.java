@@ -40,11 +40,11 @@ public class Controller {
     public int zeroStars;;
     //list of name to choose from randomly
     //17
-    String[] itemTypes = {"Sword","Bow","Wand","Laser rifle","Broadsword", "Staff", "Spear","Club","Shurikens","Stick","Ruler","Chainsaw","Spell Book","Daggers","Broken Bottle","Stapler","Sharp(and I mean VERY sharp) pencil"};
+    String[] itemTypes = {"Sword","Bow","Wand","Laser rifle","Broadsword", "Staff", "Spear","Club","Shurikens","Stick","Ruler","Chainsaw","Spell Book","Daggers","Broken Bottle","Stapler","Sharp(and I mean VERY sharp) pencil","Ballista","Claws","Orb","Scythe","Foam Katana","s̸̼̰͇̩̥͍̘̣̹̣͈̺̺̰̦̋͊̉͛͗̐̅̇̑̓̎̑͌͝w̃͘"};
     //19
-    String[] itemTitleNoun = {"lizard","dragon","fairy","cthulhu","hero","slime","goblin","troll","unicorn","werewolf","mermaid","griffin","yeti","sheep","pokemon","water bottle","cactus","pencil sharpener","international space station"};
+    String[] itemTitleNoun = {"lizard","dragon","fairy","cthulhu","hero","slime","goblin","troll","unicorn","potato","onion ring","tree","werewolf","mermaid","griffin","yeti","sheep","pokemon","water bottle","cactus","pencil sharpener","international space station","uhhh i dont know, chicken?","dumb video game","Rubik's cube","pillar","window","wall","bush","<insert funny noun>"};
     //19
-    String[] itemTitleVerb = {"slaying","taming","summoning","healing","resurrecting","cleaning","hugging","obliterating","head patting","yelling at","catching","walking","","happiness","despair","hair cutting","watching","educating","vaccinating","lecturing about the meaning of life, the universe and everything"};
+    String[] itemTitleVerb = {"slaying","taming","summoning","healing","resurrecting","cleaning","hugging","obliterating","bonking","discouraging","slapping","?????","poking","cooking","cosplaying","fearing","head patting","yelling at","catching","walking","","happiness","despair","hair cutting","watching","educating","vaccinating","lecturing about the meaning of life, the universe and everything"};
 
     //selling items
     public void SellItem(ActionEvent actionEvent) {
@@ -58,6 +58,8 @@ public class Controller {
         InventoryItemRarity.setText("");
         InventoryItemValue.setText("");
         Sold++;
+        LifeTimeSold.setText(String.valueOf(Sold));
+
         InventorySellButton.setDisable(true);
 
     }
@@ -116,6 +118,7 @@ public class Controller {
             fourStarRolls.setText(String.valueOf(fourStars));
             fiveStarRolls.setText(String.valueOf(fiveStars));
             LifetimeRolls.setText(String.valueOf(rolls));
+            LifeTimeSold.setText(String.valueOf(Sold));
 
             ReceivedItemRarity.setText(StarRarity);
 
