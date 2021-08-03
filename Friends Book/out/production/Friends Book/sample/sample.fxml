@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <children>
+      <TabPane prefHeight="416.0" prefWidth="600.0" tabClosingPolicy="UNAVAILABLE">
+        <tabs>
+          <Tab text="Add Friend">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="169.0" prefWidth="600.0">
+                     <children>
+                        <VBox alignment="CENTER_LEFT" layoutX="32.0" layoutY="43.0" prefHeight="200.0" prefWidth="100.0" spacing="15.0">
+                           <children>
+                              <Label text="Username" />
+                              <Label text="First name" />
+                              <Label text="Last name" />
+                              <Label text="Age" />
+                              <Label text="Gender" />
+                           </children>
+                        </VBox>
+                        <VBox alignment="CENTER" layoutX="132.0" layoutY="43.0" prefHeight="200.0" prefWidth="100.0" spacing="8.0">
+                           <children>
+                              <TextField fx:id="UsernameInput" promptText="Username" />
+                              <TextField fx:id="FirstnameInput" promptText="First name" />
+                              <TextField fx:id="LastnameInput" promptText="Last name" />
+                              <TextField fx:id="AgeInput" promptText="Age" />
+                              <TextField fx:id="GenderInput" promptText="Gender" />
+                           </children>
+                        </VBox>
+                        <Button fx:id="AddFriendButton" layoutX="274.0" layoutY="131.0" mnemonicParsing="false" onAction="#AddFriend" text="Add Friend" />
+                     </children></AnchorPane>
+            </content>
+          </Tab>
+          <Tab text="Friends">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <ListView fx:id="FriendsList" layoutX="14.0" layoutY="14.0" onMouseClicked="#DisplayFriend" prefHeight="343.0" prefWidth="288.0" />
+                        <VBox layoutX="322.0" layoutY="86.0" prefHeight="200.0" prefWidth="100.0" spacing="15.0">
+                           <children>
+                              <Label text="Usename" />
+                              <Label text="First name" />
+                              <Label text="Last name" />
+                              <Label text="Age" />
+                              <Label text="Gender" />
+                           </children>
+                        </VBox>
+                        <VBox layoutX="422.0" layoutY="86.0" prefHeight="200.0" prefWidth="100.0" spacing="15.0">
+                           <children>
+                              <Label fx:id="DisplayUsername" />
+                              <Label fx:id="DisplayFirstName" />
+                              <Label fx:id="DisplayLastName" />
+                              <Label fx:id="DisplayAge" />
+                              <Label fx:id="DisplayGender" />
+                           </children>
+                        </VBox>
+                     </children></AnchorPane>
+            </content>
+          </Tab>
+        </tabs>
+      </TabPane>
+   </children>
+</VBox>
