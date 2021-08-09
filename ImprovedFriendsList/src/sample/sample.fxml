@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox alignment="TOP_CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" spacing="5.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <children>
+      <ListView fx:id="ViewFriends" prefHeight="200.0" prefWidth="200.0" />
+      <HBox alignment="CENTER" prefHeight="48.0" prefWidth="600.0" spacing="17.0">
+         <children>
+            <Label text="Username" />
+
+            <TextField fx:id="UsernameInput" prefWidth="149.0" />
+         </children>
+      </HBox>
+      <HBox alignment="CENTER" prefHeight="33.0" prefWidth="600.0" spacing="13.0">
+         <children>
+            <Label text="First Name" />
+            <TextField fx:id="FirstNameInput" />
+         </children>
+      </HBox>
+      <HBox alignment="CENTER" prefHeight="53.0" prefWidth="600.0" spacing="15.0">
+         <children>
+            <Label text="Last Name" />
+            <TextField fx:id="LastNameInput" prefWidth="149.0" />
+         </children>
+      </HBox>
+      <HBox alignment="CENTER" prefHeight="45.0" prefWidth="600.0" spacing="48.0">
+         <children>
+            <Label text="Age" />
+            <TextField fx:id="AgeInput" prefWidth="149.0" />
+         </children>
+      </HBox>
+      <HBox alignment="CENTER" prefHeight="37.0" prefWidth="600.0" spacing="30.0">
+         <children>
+            <Label text="Gender" />
+            <TextField fx:id="GenderInput" prefWidth="149.0" />
+         </children>
+      </HBox>
+      <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="15.0">
+         <children>
+            <Button fx:id="SaveButton" mnemonicParsing="false" onAction="#Save" text="Save" />
+            <Button fx:id="LoadButton" mnemonicParsing="false" onAction="#Load" text="Load" />
+            <Button fx:id="AddFriendButton" mnemonicParsing="false" onAction="#AddFriend" text="Add Friend"/>
+         </children>
+      </HBox>
+   </children>
+</VBox>
